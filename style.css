@@ -1,0 +1,120 @@
+*{
+    padding:10px ;
+    margin:5px;
+    font-family:sans-serif;
+}
+body{
+    background:linear-gradient(rgb(103, 103, 108), rgb(23, 23, 23) ) , url();
+    height:90%;
+    width: 90%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color: rgb(246, 236, 246);
+  
+}
+body::after{
+    content:'';
+    width: 80%;
+    height: 90%;
+    background:rgb(193, 58, 58) ;
+    position:absolute;
+    z-index: -1;
+    clip-path: circle(40% at right 70%) ;
+}
+.container{
+    width: 90%;
+    height: 540px;
+    background-color:;
+    border-radius: 20px ;
+    text-transform: uppercase;
+    color:;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:90%;
+    margin: 10px;
+    padding: 20px 0 ;
+    
+}
+header .logo{
+    color: rgb(2, 62, 62);
+    text-decoration:none;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing:2px ;
+    font-weight:700;
+    display: block;
+    align-items: center;
+}
+header UL{
+    width: auto;
+    list-style: inherit;
+    display: flex;
+    justify-content: space-between;
+
+}
+header ul li{
+    display:inline-block;
+    margin: 0px 6PX  ;
+}
+header ul li a{
+    color: rgb(207, 217, 225);
+    text-decoration: none;
+    font-size: 18px ;
+    font-weight: 500;
+    width: 50px;
+    align-items: center;
+    text-transform: lowercase
+
+}
+header ul li a:hover{
+    color: red;
+}
+.content{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   width: 80%;
+   margin: auto;
+   overflow:hidden;
+}
+.content .text{
+    color: aliceblue;
+    width: 40%;
+    text-transform: uppercase;
+}
+.content .text h2{
+    font-size:40px ;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+.content .text p{
+    width: px;
+    padding: 20px 0;
+    color: azure;
+    font-size: 19px;
+    line-height: 25px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+.content .image{
+width: 30%;
+}
+.content .image img{
+    width: 400px;
+    
+}
+@media (min-width:950px) and (max-width:1150PX){
+    .content .image img{
+        width: 300px;
+    }
+}
